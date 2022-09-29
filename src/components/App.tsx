@@ -1,6 +1,5 @@
 import React from 'react';
 import _ from 'lodash';
-import Yaruo from '../assets/images/yaruo.png';
 
 import '../style.css';
 import '../style.scss';
@@ -16,9 +15,7 @@ const App = () => {
       {myName}口グセなのか？
       <br />
       {words}
-      <div>
-        <img src={Yaruo} alt="" className="src" />
-      </div>
+      <div></div>
     </div>
   );
 };
