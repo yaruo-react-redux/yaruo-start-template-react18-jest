@@ -1,20 +1,10 @@
-import _ from 'lodash';
-import './style.css';
-import './style.scss';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
 
-import Yaruo from './assets/images/yaruo.png';
-
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, now inported by this script
-  element.innerHTML = _.join(['webpack', 'is working'], ' ');
-  return element;
-}
-
-document.body.appendChild(component());
-
-const image = new Image();
-image.src = Yaruo;
-
-document.body.appendChild(image);
+ReactDOM.render(
+  <div>
+    <App />
+  </div>,
+  document.getElementById('root')
+);
